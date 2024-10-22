@@ -7,6 +7,10 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-
+        <TextBlock HorizontalAlignment="Left"  Background="PaleGreen" Margin="92,38,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="56" Width="123" RenderTransformOrigin="0.541,0.555"><Run Language="pl-pl" Text="Wprowadź dane dotyczące powierzchni głowy"/></TextBlock>
+        <TextBox HorizontalAlignment="Left" Margin="92,94,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="39" TextChanged="TextBox_TextChanged"/>
+        <TextBlock HorizontalAlignment="Left" Background="PaleGreen" Margin="296,38,0,0" TextWrapping="Wrap" Text="Wprowadź dane dotyczące gęstości włosów" VerticalAlignment="Top" Height="56" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Margin="296,94,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="39" TextChanged="TextBox_TextChanged"/>
+        <Button Content="SPRAWDŹ" Background="PaleGreen" HorizontalAlignment="Left" Margin="154,331,0,0" VerticalAlignment="Top" Height="62" Width="202"/>
     </Grid>
 </Window>
