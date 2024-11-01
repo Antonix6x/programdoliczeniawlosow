@@ -5,12 +5,21 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:programdoliczeniawlosow"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Licznikwłosów" Height="450" Width="800">
     <Grid>
-        <TextBlock HorizontalAlignment="Left"  Background="PaleGreen" Margin="92,38,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="56" Width="123" RenderTransformOrigin="0.541,0.555"><Run Language="pl-pl" Text="Wprowadź dane dotyczące powierzchni głowy"/></TextBlock>
-        <TextBox HorizontalAlignment="Left" Margin="92,94,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="39" TextChanged="TextBox_TextChanged"/>
-        <TextBlock HorizontalAlignment="Left" Background="PaleGreen" Margin="296,38,0,0" TextWrapping="Wrap" Text="Wprowadź dane dotyczące gęstości włosów" VerticalAlignment="Top" Height="56" Width="120"/>
-        <TextBox HorizontalAlignment="Left" Margin="296,94,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="39" TextChanged="TextBox_TextChanged"/>
-        <Button Content="SPRAWDŹ" Background="PaleGreen" HorizontalAlignment="Left" Margin="154,331,0,0" VerticalAlignment="Top" Height="62" Width="202"/>
+        <Label Content="Gęstość włosów ( na cm²):" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="244,133,0,0" Background="GreenYellow" Width="178"/>
+        <TextBox x:Name="DensityTextBox" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="244,159,0,0" Width="178" Height="35"/>
+
+        
+        <Label Content="Powierzchnia głowy (cm²):" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="43,132,0,0" RenderTransformOrigin="0.627,2.141" Background="GreenYellow"/>
+        <TextBox x:Name="AreaTextBox" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="43,160,0,0" Width="147" RenderTransformOrigin="0.698,3.497" Height="34" />
+
+        
+        <Button Content="Oblicz" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="152,257,0,0" Width="147" Click="CalculateButton_Click" Background="GreenYellow" Height="53"/>
+
+        
+        <Label x:Name="ResultLabel" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,140,0,0" />
+        <TextBox HorizontalAlignment="Left" Height="32" Margin="445,244,0,0" TextWrapping="Wrap" Text="Liczba twoich włosów" VerticalAlignment="Top" Width="119" TextChanged="TextBox_TextChanged" Background="GreenYellow"/>
     </Grid>
+
 </Window>
